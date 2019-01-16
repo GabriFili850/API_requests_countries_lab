@@ -12,4 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectDropdown = new SelectView(selectContainer);
   selectDropdown.bindEvents();
 
+  const selectDetail = document.querySelector('#country');
+  const resultView = new ResultView(selectDetail);
+  resultView.bindEvents();
+
 });
