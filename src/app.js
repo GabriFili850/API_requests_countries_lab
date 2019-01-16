@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript Loaded');
 
   const country = new Countries();
-  country.getData();
+  country.bindEvents();
+
+  const selectContainer = document.querySelector('#countries');
+  const selectDropdown = new SelectView(selectContainer);
+  selectDropdown.bindEvents();
 
 });
